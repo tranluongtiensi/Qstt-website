@@ -6,11 +6,14 @@ In the 4.0 era, where science and technology develop strongly, e-commerce sites 
 - Trịnh Anh Tú
 - Phạm Minh Quang
 - Đỗ Cao Tiến
+
 Tack managerment table: [Updating] 
 ### Website
 Tech stack
 - Front-end: html, css
 - Back-end: [Updating]
+
 UI/UX prototype: [here](https://www.figma.com/file/kUQ1snTRDqYJpcqV06r2UV/Untitled?node-id=0%3A1)
+
 demo-online: [link to website]
 
