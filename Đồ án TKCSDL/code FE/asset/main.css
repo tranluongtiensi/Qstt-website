@@ -11,7 +11,7 @@
 }
 .banner-search {
     display: flex;
-    max-width: 1800px;
+    max-width: 1440px;
     width: 100%;
     height: 91px;
     background-color: #131921;
@@ -153,22 +153,20 @@
     width: 56%;
     margin-top: 33px;
     text-align: center;
-    color: var(--white-color);
-}
-.banner-login__register:hover {
-    color:rgb(252, 151, 1);
-    cursor: pointer;
 }
 .banner-login__login {
     font-size: 2.2rem;
     width: 80%;
     margin-top: 33px;
     text-align: center;
+}
+.banner-login__link {
+    font-size: 2.2rem;
+    text-decoration: none;
     color: var(--white-color);
 }
-.banner-login__login:hover {
+.banner-login__link:hover {
     color:rgb(252, 151, 1);
-    cursor: pointer;
 }
 
 /* DANH MUC  */
@@ -176,23 +174,54 @@
     background-color: #232F3E;
 }
 .container-list__menu {
-    max-width: 1800px;
+    max-width: 1440px;
     height: 64px;
     background-color: #232F3E;
     margin: 0 auto 0 auto;
-    padding: 0px 36px;
+    padding: 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 .container-list__item {
+    position: relative;
+    width: 100%;
     font-size: 2rem;
     color: var(--white-color);
     list-style: none;
+    padding: 20px 0px;
 }
 .container-list__item:hover {
     color:rgb(252, 151, 1);
     cursor: pointer;
+    background-color: #3f556f;
+}
+.container-list__wrap {
+    position: absolute;
+    background-color: #37475b;
+    width: 100%;
+    color: #fff;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.container-list__item:hover
+.container-list__wrap{
+    display: block;
+}
+.container-detail__button {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 16px 6px;
+    border-bottom: 2px solid #232f3e;
+}
+.container-detail__button:last-child {
+    border-bottom: none;
+}
+.container-detail__button:hover {
+    color: rgb(252, 151, 1);
 }
 .container {
     background-color: rgb(230, 230, 230);
@@ -202,7 +231,7 @@
 }
 .container-banner {
     position: relative;
-    max-width: 1800px;
+    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -218,7 +247,7 @@
     display: block;
 }
 .container-banner__banner {
-    padding-top: 42%;
+    padding-top: 47%;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -261,7 +290,7 @@
 
 .container-product {
     background-color: #fff;
-    max-width: 1800px;
+    max-width: 1440px;
     margin: 0 auto;
     z-index: 1;
 }
@@ -274,7 +303,7 @@
 
 
 .container-bestseller {
-    max-width: 1800px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: #fff;
     padding-bottom: 32px;
