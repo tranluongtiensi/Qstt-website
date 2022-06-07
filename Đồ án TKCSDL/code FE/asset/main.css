@@ -336,7 +336,7 @@
     font-size: 3rem;
     font-weight: 500;
     color: rgb(252, 151, 1);
-    padding: 35px 0 0 35px;
+    padding: 35px 0 25px 35px;
 }
 .container-product {
     background-color: #fff;
@@ -346,6 +346,11 @@
 }
 .container_product {
     padding: 40px !important;
+    border: 1px solid #e0e0e0;
+}
+.container_row {
+    margin-right: -1px !important;
+    margin-left: -1px !important;
 }
 .container-product__img {
     padding-top: 100%;
@@ -370,7 +375,9 @@
 }
 .price-product {
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1101ed;
 }
 .out-of-stock {
     font-size: 1.8rem;
