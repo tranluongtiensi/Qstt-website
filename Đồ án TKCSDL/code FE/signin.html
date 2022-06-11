@@ -34,6 +34,7 @@
                     </a>
                 </div>
                 <p class="sign-in__or">OR</p>
+              <form id = "sign-in-form">
                 <div class="form-group">
                     <i class="form-group__icon fas fa-user"></i>
                     <input id="user" name="user" type="text" placeholder="User ID" class="form-control">
@@ -47,10 +48,9 @@
                 </div>
           
                 <a href="index_signin.html" style="text-decoration: none;">
-                <button class="form-submit">
-
-                  Sign In</button>
+                <button class="form-submit">Sign In</button>
                 </a>
+              </form>
                 <div class="form-register">
                     <p class="form-register__infor">Haven't got an account yet ?</p>
                     <a href="signup.html" class ="form-register__link">Register</a>
@@ -82,13 +82,8 @@
         formGroupSelector: '.form-group',
         errorSelector: '.form-message',
         rules: [
-          Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn'),
           Validator.isEmail('#user'),
           Validator.minLength('#password', 6),
-          Validator.isRequired('#password_confirmation'),
-          Validator.isConfirmed('#password_confirmation', function () {
-            return document.querySelector('#form-1 #password').value;
-          }, 'Mật khẩu nhập lại không chính xác')
         ],
         onSubmit: function (data) {
           // Call API
@@ -112,6 +107,32 @@
       });
     });
 
+    const form = document.getElementById('sign-in-form') //tạo biến chứa các thuộc tính user nhập vào
+    form.addEventListener('submit', signin)//khi nhấn submit sẽ chuyển tới hàm signin
+    async function signin(event){// lấy đầu vào bằng event submit
+      event.preventDefault()//ngăn chặn việc chạy các chương trình khác ngoài việc submit khi ấn tùm lum sau khi ấn submit
+      const username = document.getElementById('user').value// lấy ra username
+      const password = document.getElementById('password').value//lấy ra password
+      const result = await fetch('/signin',{ //nạp từ path /signin
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json'
+         },
+         body: JSON.stringify({
+           username,
+           password
+         })
+      }).then((res) => res.json())
+
+      if (result.status === 'ok') {
+           console.log('Got the token: ', result.data)
+           localStorage.setItem('token', result.data)
+           alert('success')
+           window.location.href = '/index_signin.html'
+      }else {
+        alert (result.error)
+      }
+    }
   </script>
 <script src = "./asset/signin.js"></script>
 </html>

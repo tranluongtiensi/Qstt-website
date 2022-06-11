@@ -34,12 +34,12 @@
                     </a>
                 </div>
                 <p class="sign-in__or">OR</p>
+              <form id = "reg-form">
                 <div class="form-group">
                     <i class="form-group__icon fas fa-user"></i>
                     <input id="user" name="user" type="text" placeholder="User ID" class="form-control">
                     <span class="form-message"></span>
                 </div>
-          
                 <div class="form-group">
                     <i class="form-group__icon fas fa-lock"></i>
                     <input id="password" name="password" type="password" placeholder="Password" class="form-control">
@@ -56,6 +56,7 @@
                     <span class="form-message"></span>
                 </div>
                 <button class="form-submit">Sign Up</button>
+              </form>
                 <div class="form-register">
                     <p class="form-register__infor">Already have an account.</p>
                     <a href="signin.html" class ="form-register__link">Sign In</a>
@@ -86,12 +87,12 @@
         formGroupSelector: '.form-group',
         errorSelector: '.form-message',
         rules: [
-            Validator.isEmail('#user'),
-            Validator.minLength('#password', 6),
-            Validator.isRequired('#tel', 'Please enter the phone number'),
+          Validator.isEmail('#user'),
+          Validator.minLength('#password', 6),
+          Validator.isRequired('#tel', 'Please enter the phone number'),
           Validator.isRequired('#password_confirmation'),
           Validator.isConfirmed('#password_confirmation', function () {
-            return document.querySelector('#form-1 #password').value;
+          return document.querySelector('#form-1 #password').value;
           }, 'Re-entered password is incorrect')
         ],
         onSubmit: function (data) {
@@ -115,6 +116,37 @@
         }
       });
     });
+    const form = document.getElementById('reg-form')
+    form.addEventListener('submit', registerUser)
+
+    async function registerUser(event){
+      event.preventDefault()
+      const username = document.getElementById('user').value
+      const password = document.getElementById('password').value
+      const password_confirmation = document.getElementById('password_confirmation').value
+      const phone = document.getElementById('tel').value
+
+      const result = await fetch('/register',{
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json'
+         },
+         body: JSON.stringify({
+           username,
+           password,
+           password_confirmation,
+           phone
+         })
+      }).then((res) => res.json())
+
+      if (result.status === 'ok') {
+         alert('success')
+         window.location.href = '/signin.html'
+      }else {
+        alert (result.error)
+        window.location.href = '/index_signin.html'
+      }
+    }
 
   </script>
 <script src = "./asset/signin.js"></script>
