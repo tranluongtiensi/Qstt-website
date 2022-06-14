@@ -1,7 +1,6 @@
 {
   "name": "code-be",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
@@ -17,5 +16,6 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.6",
     "nodemon": "^2.0.16"
-  }
+  },
+  "description": ""
 }
