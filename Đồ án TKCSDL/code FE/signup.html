@@ -37,7 +37,7 @@
               <form id = "reg-form">
                 <div class="form-group">
                     <i class="form-group__icon fas fa-user"></i>
-                    <input id="user" name="user" type="text" placeholder="User ID" class="form-control">
+                    <input id="user" name="user" type="text" placeholder="user name" class="form-control">
                     <span class="form-message"></span>
                 </div>
                 <div class="form-group">
@@ -143,8 +143,7 @@
          alert('success')
          window.location.href = '/signin.html'
       }else {
-        alert (result.error)
-        window.location.href = '/index_signin.html'
+        // alert (result.error)
       }
     }
 

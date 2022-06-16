@@ -151,7 +151,7 @@ Validator.isEmail = function (selector, message) {
     return {
         selector: selector,
         test: function (value) {
-              return value ? undefined :  message || 'Please input your User ID !';
+              return value ? undefined :  message || 'Please input your user name';
         }
     };
 }
