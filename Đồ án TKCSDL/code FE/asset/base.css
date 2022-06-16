@@ -38,7 +38,11 @@ html {
     margin-left: 16px;
     margin-right: 16px;
 }
+.grid__column-5 {
+    width: 41.666667%;
+    padding: 16px;
 
+}
 .grid__column-6 {
     width: 50%;
     padding-left:0px;
@@ -53,6 +57,7 @@ html {
 }
 .grid__column-3 {
     width: 25%;
+    padding: 16px;
 }
 .grid__column-1 {
     width: 20%;
