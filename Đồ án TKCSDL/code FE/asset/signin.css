@@ -114,13 +114,17 @@
     color: #fff;
     text-decoration: none;
     display: block;
-    text-align: center;
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin-bottom: 32px;
+}
+.login-shop {
+    color: #fff;
+    text-decoration: none;
+    display: block;
 }
 .forgot-password:hover {
-    color: #d1d1d1;
+    color: rgb(252, 151, 1);
+}
+.login-shop:hover {
+    color: rgb(252, 151, 1);
 }
 .img-signin {
     width: 60%;
@@ -166,4 +170,13 @@
     left: 0;
     bottom: 0;
     display: none;
+}
+.contain_login-shop {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 32px;
+    justify-content: space-around;
 }
