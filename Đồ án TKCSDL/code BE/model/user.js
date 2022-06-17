@@ -1,15 +1,11 @@
-  const mongoose = require ('mongoose')
-  const Schema = mongoose.Schema;
+const sql = require ('mysql')
+const dotenv = require ('dotenv').config()
+const db = sql.createConnection({
+    host     : process.env.DATABASE_HOST,
+    user     : process.env.DATABASE_USER,
+    password : process.env.DATABASE_PASSWORD,
+    database : process.env.DATABASE
+})
 
-  const UserSchema = new Schema({
-    username: {type: String, required: true, unique: true},
-    password: { type: String, required: true},
-    password_confirmation: {type: String, required: true},
-    phone: {type: String, required: true}
-  },{ collection: 'users'}
-  )
-
-  const model = mongoose.model('UserSchema', UserSchema);
-
-  module.exports = model
+module.exports = db
 
