@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <!-- <link rel="stylesheet" href="/my_account.css"> -->
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/add_pruduct.css">
+    <link rel="stylesheet" href="/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/img/logo web.png">
+
+</head>
+<body>
+    <header class="nav">
+               <!-- FORM LOGIN AND SEARCH  -->
+        <!-- BEGIN  -->
+        <div class="banner">
+            <div class="banner-search">
+                <a href="/home">
+                    <div class="banner-logo" style="background-image:url(/img/logo\ web.png);">
+
+                    </div>
+                </a>
+                <div class="banner-search__search">
+                    <input class="banner-search__input"type="text">
+                        <div class="banner-search__history">
+                            <h3 class="banner-history__heading">Lịch sử tìm kiếm</h3>
+                            <ul class="banner-history__list">
+                                <li class="banner-history__item">
+                                    <a href="#">iPhone 14 Pro Max</a>   
+                                </li>
+                                <li class="banner-history__item">
+                                    <a href="#">Gucci</a>
+                                </li>
+                                <li class="banner-history__item">
+                                    <a href="#">Louis Vuitton</a>
+                                </li>
+                                <li class="banner-history__item">
+                                    <a href="#">Chanel</a>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="banner-search__icon">
+                        <i class="banner-search__item fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="banner-login">
+                    <div class="banner-login__cart">
+                        <i class="banner-cart__icon fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="banner-login__notification">
+                        <i class="banner-notification__icon fas fa-bell"></i>
+                    </div>
+                    <!-- <div class="banner-login__form">
+                        <div class="banner-login__register">
+                            <a class="banner-login__link" href="/register">Sign up</a>
+                        </div>
+                        <div class="banner-login__login">
+                            <a class="banner-login__link" href="/login">Sign in</a>
+                        </div>
+                    </div> -->
+                    <div class="banner-login__wrap" style="z-index: 1;width: 50%;">
+                        <div  class="banner-login__user js_open" id="user__click">
+                            Jack Spar
+                            <div class="user-wrap js_contain js-modal-container" id="user__detail">
+                                <li class="user-wrap__detail"><i class="user-icon fas fa-user-circle"></i>My Account</li>
+                                <li class="user-wrap__detail"><i class="user-icon fas fa-ticket-alt"></i>My Voucher</li>
+                                <li class="user-wrap__detail"><i class="user-icon fas fa-shopping-bag"></i>My Order</li>
+                                <li class="user-wrap__detail"><i class="user-icon fas fa-sign-out-alt"></i>Sign Out</li>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="/img_singup/User sample.png" alt="" class="banner-login__avatar js_open" id="user__detail" >
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contain">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-5">
+                    <div class="add_img">
+                        <div class="add_des">Picture</div>
+                        <i class="fas fa-plus-square add-icon"></i>
+                        <!-- <div class="separate_add-2"></div> -->
+                    </div>
+                </div>
+                <div class="grid__column-7">
+                    <textarea type="text" placeholder="Enter your product name..." class="add_product-name"></textarea>
+                    <input type="text" placeholder="Enter your product price..." class="add_product-price">
+                    <div class="contain_wrap-color">
+                        <div class="contain_color-heading">Color: </div>
+                        <input type="text" placeholder="Add" class="add_product-color">
+                    </div>
+                    <div class="contain_wrap-img">
+                        <img src="/img_product/Watch1.png" class="contain-img_product">
+                        <img src="/img_product/Watch1.png" class="contain-img_product active">
+                        <img src="/img_product/Watch1.png" class="contain-img_product">
+                    </div>
+                </div>
+            </div>
+            <div class="grid__row">
+                <div class="grid__column-5">
+                    <textarea type="text" placeholder="Enter your description" class="add_description"></textarea>
+                </div>
+                <div class="grid__column-7">
+                    <textarea type="text" placeholder="Enter your product feature" class="add_description"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid">
+            <div class="grid__row footer__row">
+                <div class="grid__column-4">
+                    <div class="footer__logo" style="background-image: url(/img/logo\ web\ 2.png);"></div>
+                </div>
+                <div class="footer__information">
+                    <div class="footer__information-frame">
+                        <i class="fas fa-globe footer__information-font"></i>
+                        <p class="footer__information-font">English</p>    
+                    </div>
+                    <div class="footer__information-frame">
+                        <p class="footer__information-font">$ VND</p>
+                    </div>
+                    <div class="footer__information-frame">
+                        <img class="footer__information-img" src="/img/cờ.jpg" alt="">
+                        <p class="footer__information-font">VietNam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
