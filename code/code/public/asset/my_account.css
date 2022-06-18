@@ -47,6 +47,7 @@
     width: 80%;
     padding: 4px 0 4px 12px;
     border-radius: 4px;
+    outline: none;
 }
 .contain_option-birth {
     margin: 0 12px 0 0;
