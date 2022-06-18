@@ -3,6 +3,7 @@ const User = require('../model/user')
 
 const register = async (req, res) => {
       const { username, password: plainTextPassword, password_confirmation: someOtherPlaintextPassword, phone} = req.body
+
       if (!username || typeof username !== 'string') {
          return res.json({ status: 'error', error: 'Invalid username'})
       }
@@ -10,7 +11,7 @@ const register = async (req, res) => {
          return res.json({ status: 'error', error: 'Invalid password'})
       }
       User.query('SELECT * FROM users WHERE username = ?', [username], async (error, result) => {
-  
+
           if (error) throw error
           if (result[0]) {
             const validPassword = await bcrypt.compare(plainTextPassword, result[0].password) 
@@ -20,7 +21,7 @@ const register = async (req, res) => {
             If it's the same then show message "user already in use please login"
             */
             if ( validPassword && validPasswordConfirmation && phone == result[0].phone) {
-              return res.json({status: 'ok', error: 'user already in use please login'})
+              return res.json({status: 'ok', success: 'user already in use please login'})
             }
             if (phone != result[0].phone){
   

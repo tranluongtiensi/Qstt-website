@@ -4,6 +4,7 @@ const User = require('../model/user')
 const dotenv = require('dotenv')
 
 const login =  (req, res) => {
+
     const { username, password: plainTextPassword} = req.body
     //no value entered
     if (!plainTextPassword || !username) {
@@ -32,7 +33,7 @@ const login =  (req, res) => {
             secure: false
           }
           res.cookie('userRegister', token, cookie_option)
-          return res.json({status: 'ok', success: 'user has been logged in', data: token})
+          return res.json({status: 'ok', success: 'Logged in successfully', data: token})
         }
       })
     }

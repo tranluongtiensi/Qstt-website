@@ -1,6 +1,7 @@
 
 const express = require ('express')
 const loggedin = require ('../controllers/loggedin')
+const logout = require ('../controllers/logout')
 const router = express.Router()
 
 router.get('/',loggedin, (req, res) => {
@@ -16,6 +17,7 @@ router.get('/login', (req, res) => {
 router.get('/home', (req, res) => {
     res.render('index')
 })
+router.get('/logout', logout)
 router.get('/accessory-jewelry', (req, res) => {
     res.render('AccessoryJewelry')
 })
@@ -81,6 +83,9 @@ router.get('/sports-volleyball', (req, res) => {
 })
 router.get('/my_account', (req, res) => {
     res.render('myAccount')
+})
+router.get('/index_login_shop', (req, res) => {
+    res.render('indexSigninShop')
 })
 router.get('/add_product', (req, res) => {
     res.render('addProduct')

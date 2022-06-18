@@ -14,7 +14,7 @@ const result = await fetch('/api/login',{
 if (result.status === 'ok') {
     console.log('Got the token: ', result.data)
     alert(result.success)
-    window.location.href = '/index_signin'
+    window.location.href = '/index_login_shop'
 }else 
   {
  alert (result.error)
