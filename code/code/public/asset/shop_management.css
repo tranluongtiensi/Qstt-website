@@ -60,6 +60,9 @@
     font-size: 2rem;
 }
 .add_more-product {
+    display: block;
+    color: orange;
+    text-decoration: none;
     text-align: center;
     padding: 40px 0;
     font-size: 2.4rem;
