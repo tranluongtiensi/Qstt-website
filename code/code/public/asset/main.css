@@ -475,3 +475,12 @@
     color: #fff;
     font-size: 1.4rem;
 }
+
+
+/* SHOP VIEW  */
+.shop_view__img {
+    padding-top: 60%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}

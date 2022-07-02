@@ -1,0 +1,130 @@
+.rating-left {
+    border-right: 1px solid #f1f1f1;
+    position: relative;
+    padding: 0 20px 10px 10px;
+    text-align: center;
+    width: 38.2%;
+}
+.rating-star.left .rating-left {
+    width: 100%;
+}
+.rating-star.left {
+    float: left;
+    width: 100%;
+}
+.rating-star {
+    align-items: flex-start;
+    display: flex;
+    margin: 10px 0 20px;
+}
+.rating-top {
+    align-items: center;
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+.rating-star .point {
+    color: #fe8c23;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-top: 2px;
+}
+.list-star {
+    margin: 0 8px;
+}
+.rating-total {
+    color: #333;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 4px;
+}
+.rating-list li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 7px;
+}
+.rating-list .number-star {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    width: 25px;
+    margin-right: 24px;
+}
+.icondetail-blackstar {
+    background-position: -290px 0;
+    height: 8px;
+    width: 8px;
+}
+.rating-list .number-star i {
+    margin-top: -4px;
+}
+.rating-list .timeline-star {
+    background-color: #eee;
+    height: 4px;
+    position: relative;
+    width: calc(100% - 60px);
+}
+.rating-list .timing {
+    background-color: #fe8c23;
+    left: 0;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
+.rating-list .number-percent {
+    color: #2f80ed;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    padding-left: 10px;
+    text-align: left;
+    width: 35px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+.contain {
+    margin-top: 92px;
+}
+.banner_shop-img {
+    width: 100%;
+}
+.heading_name-shop {
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(252, 151, 1);
+    text-align: center;
+    padding: 30px 0;
+}
+.customer_vote-heading {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #004C77;
+}
+.comment_wrap-shop {
+    font-size: 1.6rem;
+}
+.comment_vote-wrap {
+    display: flex;
+    padding-top: 20px;
+}
+.comment_vote-heading {
+    font-weight: 500;
+    margin-right: 8px;
+}
+.comment_vote-name {
+    color: #898989;
+}
+.logo_shop-view {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+}
