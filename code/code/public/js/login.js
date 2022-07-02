@@ -3,14 +3,13 @@ form.addEventListener('submit', async () => {
         username: user.value,
         password: password.value
     }
-const result = await fetch('/api/login',{ 
+const result = await fetch('/api/login', { 
     method: 'POST',
     headers: {
     'Content-Type': 'application/json'
     },
     body: JSON.stringify(login)
 }).then((res) => res.json())
-
 if (result.status === 'ok') {
     console.log('Got the token: ', result.data)
     alert(result.success)

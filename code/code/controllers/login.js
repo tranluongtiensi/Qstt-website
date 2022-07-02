@@ -14,7 +14,6 @@ const login =  (req, res) => {
       User.query('SELECT * FROM users WHERE username = ?', [username], async (error, result) => {
         if (error) throw error
         const validPassword = await bcrypt.compare(plainTextPassword, result[0].password)
-        console.log(validPassword)
         //enter wrong username or password 
         if ( !result[0] || !validPassword) {
           return res.json({status: 'error', error: 'Incorrect username or password'}) }
@@ -34,8 +33,9 @@ const login =  (req, res) => {
           }
           res.cookie('userRegister', token, cookie_option)
           return res.json({status: 'ok', success: 'Logged in successfully', data: token})
+
         }
       })
     }
   }
-  module.exports = login
+  module.exports = module.exports = login

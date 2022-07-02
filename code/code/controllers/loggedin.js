@@ -12,5 +12,6 @@ const loggedin = (req, res, next) => {
     } catch (error) {
         if(err) return next()
     }
+    console.log('loggin')
 }
 module.exports = loggedin

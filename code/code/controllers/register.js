@@ -22,9 +22,9 @@ const register = async (req, res) => {
             */
             if ( validPassword && validPasswordConfirmation && phone == result[0].phone) {
               return res.json({status: 'ok', success: 'user already in use please login'})
+
             }
             if (phone != result[0].phone){
-  
               return res.json({status: 'error', error: 'username is already in use, please enter another username'})
             }
             else{
@@ -37,7 +37,7 @@ const register = async (req, res) => {
               post = {username: username, password: password, password_confirmation: password_confirmation, phone: phone}
               User.query('INSERT INTO users SET ?', post, (error, result) => {
                   if (error) throw error
-                  return res.json ({status: 'ok'})
+                  return res.json ({status: 'ok', success: 'user successfully created'})
               })     
           }
       })

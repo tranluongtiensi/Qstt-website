@@ -4,8 +4,13 @@ const loggedin = require ('../controllers/loggedin')
 const logout = require ('../controllers/logout')
 const router = express.Router()
 
-router.get('/',loggedin, (req, res) => {
-    res.render('index')
+router.get('/',loggedin , (req, res) => {
+    if(req.user){
+        res.render('index', {status: "loggedin", user: req.user})
+    }
+    else{
+    res.render('index', {status: 'nothing', user: 'nothing'})
+    }
 })
 
 router.get('/register', (req, res) => {
@@ -84,10 +89,13 @@ router.get('/sports-volleyball', (req, res) => {
 router.get('/my_account', (req, res) => {
     res.render('myAccount')
 })
+router.get('/my_accountshop', (req, res) => {
+    res.render('myAccountShop')
+})
 router.get('/index_login_shop', (req, res) => {
     res.render('indexSigninShop')
 })
-router.get('/add_product', (req, res) => {
+router.get('/addproduct', (req, res) => {
     res.render('addProduct')
 })
 router.get('/index_signin', (req, res) => {
@@ -98,5 +106,8 @@ router.get('/product', (req, res) => {
 })
 router.get('/orderproduct', (req, res) => {
     res.render('OrderProduct')
+})
+router.get('/shopmanagement', (req, res) => {
+    res.render('shopManagement')
 })
 module.exports = router

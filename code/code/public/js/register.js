@@ -12,6 +12,7 @@ form.addEventListener('submit', async () => {
         },
         body: JSON.stringify(register),
      }).then((res) => res.json())
+     console.log(result.success)
      if (result.status === 'ok') {
         alert(result.success)
         window.location.href = '/login'
