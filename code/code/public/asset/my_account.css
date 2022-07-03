@@ -1,0 +1,191 @@
+.seperate {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 90%;
+  width: 1px;
+  left: 0;
+  right: 0;
+  background-color: #999;
+  margin: 0 auto;
+}
+.contain {
+    margin-top: 92px;
+}
+.contain_description {
+  font-size: 3.5rem;
+  font-weight: 600;
+  padding: 35px 0 20px 75px;
+}
+.contain_personal {
+    font-size: 2rem;
+    padding: 0;
+}
+.contain_user-img {
+    width: 120px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.contain_personal-infor {
+    display: flex;
+    width: 100%;
+    font-size: 1.8rem;
+    list-style: none;
+    margin: 28px 0 28px 60px;
+    align-items: center;
+}
+.contain_personal-des {
+    width: 20%;
+    font-size: 2rem;
+}
+.contain_personal-des2 {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.contain_personal-box {
+    width: 80%;
+    padding: 4px 0 4px 12px;
+    border-radius: 4px;
+    outline: none;
+}
+.contain_option-birth {
+    margin: 0 12px 0 0;
+    padding: 4px;
+    border-radius: 4px;
+}
+.contain_option-gender {
+    margin: 0 12px 0 0;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  /* background-color: DodgerBlue; */
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #000 transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #000 transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+      /* color: #ffffff; */
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      /* border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent; */
+      cursor: pointer;
+      user-select: none;
+      border: 0.5px solid black;
+      border-radius: 8px;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  /* background-color: DodgerBlue; */
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 12vh;
+  overflow-y: auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom: 0.5px solid black;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.submit-button {
+  margin-left: auto;
+  margin-right: 15%;
+  width: 90px;
+  display: block;
+  height: 50px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 200;
+  background-color: #232f3e;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background-color: #324255;
+}
+.contain_security {
+    list-style: none;
+    margin: 60px;
+}
+.contain_security-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contain_security-infor {
+    font-size: 2rem;
+}
+.contain_security-icon { 
+  margin-right: 20px;
+}
+.contain_security-add {
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 28px;
+    padding: 8px;
+    cursor: pointer;
+}
+.contain_security-add:hover {
+  background-color: rgb(225, 225, 225);
+}
+.contain_security-connect {
+  display: flex;
+  padding-top: 25px;
+  align-items: center;
+}
+.contain_wrap-bar {
+  display: flex;
+  width: 100%;
+  margin-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.contain_security-bar {
+  font-size: 2rem;
+}
+.contain_security-linked {
+  font-size: 2rem;
+  border: 1px solid black;
+  border-radius: 28px;
+  padding: 8px;
+  cursor: pointer;
+}
+.contain_security-linked:hover {
+  background-color: rgb(225, 225, 225);
+}

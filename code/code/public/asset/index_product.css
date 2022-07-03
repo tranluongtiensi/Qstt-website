@@ -1,0 +1,123 @@
+.contain_img-product {
+    width: 90%;
+}
+.contain {
+    margin-top: 92px;
+    padding-top: 50px;
+}
+.product_name {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 3rem;
+    height: 9rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    margin-bottom: 28px;
+}
+.product_price {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1101ed;
+    padding-bottom: 28px;
+
+}
+.product_color {
+    display: flex;
+    font-size: 2rem;
+    padding-bottom: 36px;
+}
+.product_color-p {
+    font-weight: 600;
+    padding-left: 8px;
+}
+.contain_address-wrap {
+    background-color: #e5e5e5;
+    height: 100%;
+    position: relative;
+}
+.contain_address-des {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding-left: 40px;
+    align-items: center;
+}
+.color_img-product {
+    width: 11%;
+    margin: 8px;
+    opacity: 0.5;
+}
+.active {
+    opacity: 1;
+}
+.address-customer.time-delivery.payment_or_delivery {
+    padding-right: 8px;
+}
+.contain_icon-space {
+    padding-right: 12px;
+}
+.contain_button {
+    color: #fff;
+    display: flex;
+    font-size: 2rem;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    font-weight: 500;
+}
+.contain_button-box {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(255, 166, 0);
+    padding: 15px;
+    border-radius: 4px;
+}
+.contain_button-box:hover {
+    background-color: rgb(255, 193, 78);
+}
+.contain_heading {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.contain_paragraph {
+    padding-top: 8px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-align: justify;
+}
+.contain_comment-customer {
+    font-size: 2.6rem;
+    font-weight: 200;
+    text-align: center;
+    border: 0.2px solid #b6b6b6;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.product_comment-customer {
+    font-size: 2rem;
+    padding: 36px 0;
+}
+.name_comment-customer {
+    display: flex;
+    text-align: center;
+    padding-bottom: 8px;
+}
+.des_comment-customer {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.separate_comment {
+    content: "";
+    width: 95%;
+    height: 0.1px;
+    background-color: #adadad;
+    position: absolute;
+    margin: 0 auto;
+}
+.product_other {
+    font-size: 2rem;
+    font-weight: 500;
+    color: green;
+}

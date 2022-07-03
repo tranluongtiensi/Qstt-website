@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/main.css">
+    <link rel="stylesheet" href="./asset/base.css">
+    <link rel="stylesheet" href="./asset/shop_management.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./asset/img/logo web.png">
+
+</head>
+<body>
+    <header class="nav">
+               <!-- FORM LOGIN AND SEARCH  -->
+        <!-- BEGIN  -->
+        <div class="banner">
+            <div class="banner-search">
+                <a href="index.html">
+                    <div class="banner-logo" style="background-image:url(./asset/img/logo\ web.png);">
+
+                    </div>
+                </a>
+                <div class="banner-search__search">
+                    <input class="banner-search__input"type="text">
+                        <div class="banner-search__history">
+                            <h3 class="banner-history__heading">Lịch sử tìm kiếm</h3>
+                            <ul class="banner-history__list">
+                                <li class="banner-history__item">
+                                    <a href="#">iPhone 14 Pro Max</a>   
+                                </li>
+                                <li class="banner-history__item">
+                                    <a href="#">Gucci</a>
+                                </li>
+                                <li class="banner-history__item">
+                                    <a href="#">Louis Vuitton</a>
+                                </li>
+                                <li class="banner-history__item">
+                                    <a href="#">Chanel</a>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="banner-search__icon">
+                        <i class="banner-search__item fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="banner-login">
+                    <div class="banner-login__cart">
+                        <i class="banner-cart__icon fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="banner-login__notification">
+                        <i class="banner-notification__icon fas fa-bell"></i>
+                    </div>
+                    <!-- <div class="banner-login__form">
+                        <div class="banner-login__register">
+                            <a class="banner-login__link" href="signup.html">Sign up</a>
+                        </div>
+                        <div class="banner-login__login">
+                            <a class="banner-login__link" href="signin.html">Sign in</a>
+                        </div>
+                    </div> -->
+                    <div class="banner-login__wrap" style="z-index: 1;width: 50%;">
+                        <div  class="banner-login__user js_open" id="user__click">
+                            Jack Spar
+                            <div class="user-wrap js_contain js-modal-container" id="user__detail">
+                                <li class="user-wrap__detail"><i class="user-icon fas fa-user-circle"></i>My Account</li>
+                                <li class="user-wrap__detail"><i class="user-icon fas fa-ticket-alt"></i>My Voucher</li>
+                                <li class="user-wrap__detail"><i class="user-icon fas fa-shopping-bag"></i>My Order</li>
+                                <li class="user-wrap__detail"><i class="user-icon fas fa-sign-out-alt"></i>Sign Out</li>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./asset/img_singup/User sample.png" alt="" class="banner-login__avatar js_open" id="user__detail" >
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="contain">
+        
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-3" style="position: relative;">
+                    <div class="separate"></div>
+                    <div class="contain_user-wrap">
+                        <img src="./asset/img_singup/User sample.png" alt="" class="contain_user-avatar">
+                        <div class="contain_contain-infor">
+                            <div class="contain_contain-shop">
+                                <div class="contain_contain-shop-name">QSTT</div>
+                                <p style="padding:0 6px;margin: 2px 0;">-</p>
+                                <div class="contain_contain-shop-level">LV 1</div>
+                            </div>
+                            <div class="contain_contain-name">Jack Spar</div>
+                        </div>
+                    </div>
+                    <a href="./edit_information-shop.html" class="contain_option-link">Profile Change</a>
+                    <a href="./shop_view.html" class="contain_option-link">Your Shop</a>
+                    <div class="separate_user"></div>
+                    <a href="" class="contain_option-link">Customer Order List</a>
+                </div>
+                <div class="grid__column-9">
+                    <div class="contain_heading-shop">
+                        <h1 class="heading_shop">PIRATE OF THE CARIBEAN SHOP</h1>
+                    </div>
+                    <div class="grid__row" style="padding-top: 40px;">
+                        <div class="grid__column-2-4">
+                            <div class="heading_product-shop">Product</div>
+                        </div>
+                        <div class="grid__column-2">
+                            <div class="heading_product-shop">Tag</div>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <div class="heading_product-shop">Quantity</div>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <div class="heading_product-shop">Price</div>
+                        </div>
+                    </div>
+                    <div class="contain_product-shop">
+                        <div class="grid__row" style="align-items: center;">
+                            <div class="grid__column-2-4">
+                                <img src="./asset/ShopManagent/shop1.png" alt="" class="img_product-shop">
+                            </div>
+                            <div class="grid__column-2">
+                                <div class="name_product-shop">Le Toy Van Barbarossa Pirate Ship Set Premium Wooden Toys for Kids Ages 3 years & Up</div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="number_product-shop">22</div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="number_product-shop">$79.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain_product-shop">
+                        <div class="grid__row" style="align-items: center;">
+                            <div class="grid__column-2-4">
+                                <img src="./asset/ShopManagent/shop2.png" alt="" class="img_product-shop">
+                            </div>
+                            <div class="grid__column-2">
+                                <div class="name_product-shop">German Passat Model Ship, Large, Cream</div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="number_product-shop">7</div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="number_product-shop">$409.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contain_product-shop">
+                        <div class="grid__row" style="align-items: center;">
+                            <div class="grid__column-2-4">
+                                <img src="./asset/ShopManagent/shop3.png" alt="" class="img_product-shop">
+                            </div>
+                            <div class="grid__column-2">
+                                <div class="name_product-shop">USAOPOLY MN004-123-17 Pirates of The Caribbean Ultimate Edition Monopoly Board Game, Multicolor</div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="number_product-shop">12</div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="number_product-shop">$92.99</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="./add_product.html" class="add_more-product">Add more product</a>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="grid">
+            <div class="grid__row footer__row">
+                <div class="grid__column-4">
+                    <div class="footer__logo" style="background-image: url(./asset/img/logo\ web\ 2.png);"></div>
+                </div>
+                <div class="footer__information">
+                    <div class="footer__information-frame">
+                        <i class="fas fa-globe footer__information-font"></i>
+                        <p class="footer__information-font">English</p>    
+                    </div>
+                    <div class="footer__information-frame">
+                        <p class="footer__information-font">$ VND</p>
+                    </div>
+                    <div class="footer__information-frame">
+                        <img class="footer__information-img" src="./asset/img/cờ.jpg" alt="">
+                        <p class="footer__information-font">VietNam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

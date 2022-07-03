@@ -1,0 +1,135 @@
+.nav_contain {
+    background-color: #465767;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 35px;
+}
+.nav_wrap {
+    padding: 40px 0;
+}
+.nav_contain-heading {
+    text-align: center;
+    color: #fff;
+    font-size: 2.8rem;
+    padding-top: 40px;
+}
+.nav_contain-shop {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+.nav_contain-user {
+    display: flex;
+    align-items: flex-end;
+    padding: 30px 0 20px 150px;
+}
+.nav_contain-img {
+    width: 6%;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.nav_contain-name {
+    font-size: 2.4rem;
+    color: orange;
+}
+.nav_contain-step {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 70px 0;
+    position: relative;
+}
+.separate_contain {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 69%;
+    background-color: #fff;
+    margin-top: 103px;
+}
+.nav_contain-step-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+}
+.nav_contain-step-heading {
+    padding-bottom: 24px;
+}
+.icon_img-nav {
+    width: 40%;
+}
+.nav_contain-note {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #fff;
+    padding: 40px 0;
+}
+.wrap_form-information {
+    padding: 0 30px;
+}
+.information_wrap {
+    background-color: rgba(233, 238, 248, 0.95);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 35px;
+    margin-bottom: 40px;
+}
+.box_heading-information {
+    padding: 30px 0 10px 0;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.box_form-information {
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1.6rem;
+    outline: none;
+}
+.contain_require {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 2rem;
+    padding: 20px 100px;
+}
+.contain_require-note {
+
+}
+.contain_require-tick {
+    width: 15px;
+    height: 15px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+.contain_button {
+    text-align: end;
+    padding: 0 150px 30px;
+    font-size: 2.6rem;
+}
+.submit_button {
+    border-radius: 30px;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #232f3e;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.submit_button:hover {
+    background-color: #526a87;
+}
+
+/* EDIT SHOP */
+.contain__heading {
+    margin: 0 100px;
+    padding: 40px;
+    font-size: 3rem;
+}

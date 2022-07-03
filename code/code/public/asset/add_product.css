@@ -1,0 +1,109 @@
+.contain {
+    margin-top: 92px;
+}
+.add_img {
+    height: 400px;
+    width: 100%;
+    border: 1px dashed black;
+    font-size: 3rem;
+    position: relative;
+    cursor: pointer;
+}
+.add_des {
+    padding-top: 40px;
+    text-align: center;
+    font-weight: 100;
+    color: #999;
+}
+/* input[type="file"]{
+    display: none;
+} */
+.add-icon {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 61%;
+    font-size: 20px;
+    display: flex !important; 
+    flex-direction: column;
+    justify-content: center;
+}
+.add_product-name {
+    resize: none;
+    min-height: 100px;
+    width: 100%;
+    padding: 10px;
+    line-height: inherit;
+    font-size: 1.8rem;
+    border: 1px solid;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin-bottom: 32px;
+    outline: none;
+}
+.add_product-price {
+    padding: 5px;
+    width: 30%;
+    margin-bottom: 32px;
+    outline: none;
+}
+.contain_wrap-color {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #a9a9a9;
+    margin-bottom: 32px;
+}
+.add_product-color {
+    width: 10%;
+    padding: 1px 5px;
+    margin-left: 8px;
+    outline: none;
+}
+.contain_wrap-img {
+    display: flex;
+    padding: 50px 0 0 30px;
+}
+.contain-img_product {
+    width: 15%;
+    margin: 0 12px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.active {
+    opacity: 1;
+}
+.add_description {
+    resize: none;
+    min-height: 500px;
+    width: 100%;
+    padding: 10px;
+    line-height: inherit;
+    font-size: 1.8rem;
+    border: 1px solid;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    outline: none;
+}
+.separate_add-1 {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 90%;
+    width: 1px;
+    left: 0;
+    right: 0;
+    background-color: #999;
+    margin: 0 auto;
+}
+.separate_add-2 {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 50%;
+    left: 0;
+    right: 0;
+    background-color: #999;
+    margin: 0 auto;
+}

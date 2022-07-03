@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<% (async () => {
+const checkLoginSuccess = await fetch('/api/login')
+// Here fetch return the promise, so we need to await it again and parse according to our needs. So, the result code would be this
+const data = await fetchResult.text();
+throttledSendMessage(channel, data);
+return data;
+})() %>
+</body>
+<script src = "/js/login.js"></script>
+</html>
